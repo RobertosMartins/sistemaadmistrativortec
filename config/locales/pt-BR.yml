@@ -4,15 +4,51 @@ pt-BR:
       x_days:
         one: "1 dias"
         other: "%{count} dias"
+  date:
+    formats:
+      default: "%d-%m-%Y"
+      short: "%d %b"
+      long: "%d %B %Y"
+    month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
   activerecord:
     models:
       client:
         one: Cliente
         other: Clientes
+      sale:
+        one: Venda
+        other: Vendas
+      comission:
+        one: Comissão
+        other: Comissões
+      discount:
+        one: Desconto
+        other: Descontos
+      product:
+        one: Produto
+        other: Produtos
+      user:
+        one: Funcionário
+        other: Funcionários
     attributes:
       client:
         name: "Nome"
-        company_name: "Nome da Empresa"
+        company_name: "Empresa"
+        document: "Documento"
+        email: "E-mail"
+        phone: "Telefone"
+        notes: "Observação"
+      sale:
+        client: "Cliente"
+        sale_date: "Data"
+        user: "Cliente"
+        discount: "Desconto"
+        notes: "Observações"
+      comission:
+        sale: "Venda"
+        value: "Valor"
+        user: Usuário
+        note: Observação
   views:
   admin:
     home:
