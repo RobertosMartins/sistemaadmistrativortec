@@ -10,6 +10,10 @@ pt-BR:
       short: "%d %b"
       long: "%d %B %Y"
     month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
+  helpers:
+    label:
+      product[product_quantities][0]: 
+        id: 'First custom label here'
   activerecord:
     models:
       client:
@@ -47,8 +51,21 @@ pt-BR:
       comission:
         sale: "Venda"
         value: "Valor"
-        user: Usuário
-        note: Observação
+        user: "Usuário"
+        note: "Observação"
+      product:
+        name: "Nome"
+        description: "Descrição"
+        created_at: "Data Criação"
+        updated_at: "Última atualização"
+        price: "Preço"
+        photo: "Foto"
+        product_quantities: "Itens"
+      discount:
+        name: "Nome"
+        description: "Descrição"
+        value: "Valor"
+        kind: "Tipo de Desconto"
   views:
   admin:
     home:
